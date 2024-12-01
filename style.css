@@ -1,23 +1,117 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navigation {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #000;
-    color: white;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 120px;
+}
+
+.quick-actions {
+    margin: 20px;
+}
+
+.update-info {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.quick-actions-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.quick-action {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-#enter-vr {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #1a73e8;
-    border: none;
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.label {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.percentage {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background: #eaeaea;
+    height: 5px;
     border-radius: 5px;
-    color: white;
-    cursor: pointer;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 100%;
+}
+
+.card {
+    background: #fff;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tractor-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tractor-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.suggestions {
+    margin: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
 }

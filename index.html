@@ -3,12 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta Quest App</title>
+    <title>My Tractor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="message">Benvenuto nella tua app VR!</div>
-    <button id="enter-vr">Entra in VR</button>
-    <script src="script.js"></script>
+    <div class="navigation">
+        <h1>MyTractor</h1>
+        <img src="h-farm.png" alt="H-Farm Logo" class="logo">
+    </div>
+    <div class="quick-actions">
+        <p class="update-info">Last update: 2 days ago</p>
+        <div class="quick-actions-container">
+            <div class="quick-action">
+                <div class="icon" style="background-color: rgba(255, 105, 180, 0.2); color: #FF69B4;">
+                    <i class="fas fa-thermometer-half"></i>
+                </div>
+                <p class="label">Temperature</p>
+                <p class="percentage">70%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%; background-color: #FF69B4;"></div>
+                </div>
+            </div>
+            <div class="quick-action">
+                <div class="icon" style="background-color: rgba(0, 0, 255, 0.2); color: #0000FF;">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <p class="label">Humidity</p>
+                <p class="percentage">25%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 25%; background-color: #0000FF;"></div>
+                </div>
+            </div>
+            <div class="quick-action">
+                <div class="icon" style="background-color: rgba(0, 255, 255, 0.2); color: #00FFFF;">
+                    <i class="fas fa-list-alt"></i>
+                </div>
+                <p class="label">Data</p>
+                <p class="percentage">15%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 15%; background-color: #00FFFF;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Your tractor</h2>
+        <div class="tractor-status">
+            <p>100%</p>
+            <i class="fas fa-battery-full"></i>
+        </div>
+        <img src="tractor.png" alt="Tractor" class="tractor-image">
+        <a href="#" class="button">Connect your tractor</a>
+    </div>
+    <div class="suggestions">
+        <h2>AI Suggestions</h2>
+        <p id="suggestion-text"></p>
+        <a href="#" class="button">Set up assistant</a>
+    </div>
 </body>
 </html>
