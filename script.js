@@ -25,9 +25,14 @@ function animate() {
 renderer.setAnimationLoop(animate);
 
 
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-        .register("./service-worker.js")
-        .then(() => console.log("Service Worker registrato con successo"))
-        .catch((error) => console.error("Errore nel registrare il Service Worker:", error));
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+                console.log('Service Worker registrato:', registration);
+            })
+            .catch((error) => {
+                console.log('Service Worker non registrato:', error);
+            });
+    });
 }

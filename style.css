@@ -1,117 +1,134 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.navigation {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header */
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    width: 120px;
-}
-
-.quick-actions {
-    margin: 20px;
-}
-
-.update-info {
-    font-size: 0.9em;
-    color: gray;
-}
-
-.quick-actions-container {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header .logo-image img {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Sections */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Quick Actions */
+  .quick-actions {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .quick-actions-list {
     display: flex;
     gap: 15px;
-    overflow-x: auto;
-}
-
-.quick-action {
-    background: #fff;
-    border-radius: 15px;
-    padding: 15px;
-    width: 150px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quick-action {
     text-align: center;
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-}
-
-.label {
-    color: gray;
-    font-size: 0.8em;
-}
-
-.percentage {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.progress-bar {
-    background: #eaeaea;
-    height: 5px;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 5px;
-}
-
-.progress {
-    height: 100%;
-}
-
-.card {
-    background: #fff;
-    margin: 20px;
-    border-radius: 15px;
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.tractor-status {
+  }
+  
+  .quick-action img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .quick-action h3 {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Tractor Section */
+  .tractor-section .tractor-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-}
-
-.tractor-image {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.suggestions {
-    margin: 20px;
-    padding: 15px;
     background: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
+    padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
+  }
+  
+  .tractor-section .tractor-info {
+    flex: 1;
+  }
+  
+  .tractor-section .tractor-image {
+    width: 150px;
+  }
+  
+  /* Settings Section */
+  .settings-section, .status-section, .ai-suggestions {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-}
+  }
+  
+  .settings-card, .status-card, .ai-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  

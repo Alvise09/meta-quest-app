@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tractor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+
+  <title>Farm Force</title>
 </head>
 <body>
-    <div class="navigation">
-        <h1>MyTractor</h1>
-        <img src="h-farm.png" alt="H-Farm Logo" class="logo">
+  <header class="header">
+    <div class="logo">
+      <h1>MyTractor</h1>
     </div>
-    <div class="quick-actions">
-        <p class="update-info">Last update: 2 days ago</p>
-        <div class="quick-actions-container">
-            <div class="quick-action">
-                <div class="icon" style="background-color: rgba(255, 105, 180, 0.2); color: #FF69B4;">
-                    <i class="fas fa-thermometer-half"></i>
-                </div>
-                <p class="label">Temperature</p>
-                <p class="percentage">70%</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%; background-color: #FF69B4;"></div>
-                </div>
-            </div>
-            <div class="quick-action">
-                <div class="icon" style="background-color: rgba(0, 0, 255, 0.2); color: #0000FF;">
-                    <i class="fas fa-tint"></i>
-                </div>
-                <p class="label">Humidity</p>
-                <p class="percentage">25%</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 25%; background-color: #0000FF;"></div>
-                </div>
-            </div>
-            <div class="quick-action">
-                <div class="icon" style="background-color: rgba(0, 255, 255, 0.2); color: #00FFFF;">
-                    <i class="fas fa-list-alt"></i>
-                </div>
-                <p class="label">Data</p>
-                <p class="percentage">15%</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 15%; background-color: #00FFFF;"></div>
-                </div>
-            </div>
+    <div class="logo-image">
+      <img src="placeholder-logo.png" alt="Farm Logo" />
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Quick Actions Section -->
+    <section class="quick-actions">
+      <h2>Quick Actions</h2>
+      <div class="quick-actions-list">
+        <div class="quick-action">
+          <img src="thermometer.png" alt="Temperature" />
+          <h3>Temperature</h3>
+          <p>70%</p>
         </div>
-    </div>
-    <div class="card">
-        <h2>Your tractor</h2>
-        <div class="tractor-status">
-            <p>100%</p>
-            <i class="fas fa-battery-full"></i>
+        <div class="quick-action">
+          <img src="humidity.png" alt="Humidity" />
+          <h3>Humidity</h3>
+          <p>25%</p>
         </div>
-        <img src="tractor.png" alt="Tractor" class="tractor-image">
-        <a href="#" class="button">Connect your tractor</a>
-    </div>
-    <div class="suggestions">
-        <h2>AI Suggestions</h2>
-        <p id="suggestion-text"></p>
-        <a href="#" class="button">Set up assistant</a>
-    </div>
+        <div class="quick-action">
+          <img src="data.png" alt="Data" />
+          <h3>Data</h3>
+          <p>15%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tractor Section -->
+    <section class="tractor-section">
+      <h2>Your Tractor</h2>
+      <div class="tractor-card">
+        <div class="tractor-info">
+          <p>Battery: 100%</p>
+          <img src="battery-icon.png" alt="Battery" />
+        </div>
+        <img src="tractor.png" alt="Tractor Image" class="tractor-image" />
+      </div>
+    </section>
+
+    <!-- Settings Section -->
+    <section class="settings-section">
+      <h2>Settings</h2>
+      <div class="settings-card">
+        <img src="settings-icon.png" alt="Settings Icon" />
+        <p>Manage your tractor settings here.</p>
+      </div>
+    </section>
+
+    <!-- Status Section -->
+    <section class="status-section">
+      <h2>Status</h2>
+      <div class="status-card">
+        <img src="status-icon.png" alt="Status Icon" />
+        <p>Your system is running perfectly.</p>
+      </div>
+    </section>
+
+    <!-- AI Suggestions Section -->
+    <section class="ai-suggestions">
+      <h2>AI Suggestions</h2>
+      <div class="ai-card">
+        <p>
+          Hello! I'm your AI assistant, here to help monitor and improve your crops by analyzing sensor data.
+        </p>
+        <button class="ai-button">Set Up Assistant</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Farm Force © 2024</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
